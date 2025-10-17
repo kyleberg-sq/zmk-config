@@ -1,0 +1,20 @@
+keymap {
+  compatible = "zmk,keymap";
+  default_layer {
+    bindings = <
+      &kp ESC &kp Q &kp W &kp E &kp R
+      &kp LSHFT &kp A &kp S &kp D &kp F
+      &kp LCTRL &kp Z &kp X &kp C &kp V
+      &kp BSPC &kp SPC &kp HOME
+    >;
+  };
+
+  raise_layer {
+    bindings = <
+      &kp 1 &kp 2 &kp 3 &kp 4 &kp 5
+      &kp 6 &kp 7 &kp 8 &kp 9 &kp 0
+      &kp F1 &kp F2 &kp F3 &kp F4 &kp F5
+      &bt BT_bootloader 
+    >;
+  };
+};
